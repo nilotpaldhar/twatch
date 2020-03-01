@@ -23,3 +23,16 @@
 .text-right {
 	text-align: right !important;
 }
+
+// Flex helper
+.d-flex {
+	display: flex !important;
+}
+
+.justify-content-center {
+	justify-content: center !important;
+}
+
+.align-items-center {
+	align-items: center !important;
+}
