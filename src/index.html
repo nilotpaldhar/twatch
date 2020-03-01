@@ -6,10 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="description" content="Smart watch landing page">
+
   <!-- Primary Font [Josefin Sans] -->
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600,700&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css">
 
   <title>Twatch | Smart Digital Watch For Luxurious Life</title>
 </head>
@@ -188,35 +187,56 @@
     </section>
 
     <!-- New Arrivals -->
-    <section class="new-arrivals"></section>
+    <section class="new-arrivals">
+      <div class="container">
+        <h2 class="heading__secondary text-center m-b-5">New Arrivals</h2>
+        <div class="row">
+          <div class="col-1-of-3">
+            <div class="card">
+              <h4 class="card__title">Sports Watch</h4>
+              <p class="card__text">Simple black version</p>
+              <p class="card__price">&dollar;150</p>
+              <img class="card__img" src="./assets/gallery-1.png" alt="Green Watch">
+              <a href="#" class="card__btn">Buy Now</a>
+            </div>
+          </div>
+
+          <div class="col-1-of-3">
+            <div class="card">
+              <h4 class="card__title">Sports Watch</h4>
+              <p class="card__text">Simple green version</p>
+              <p class="card__price">&dollar;170</p>
+              <img class="card__img" src="./assets/gallery-2.png" alt="Green Watch">
+              <a href="#" class="card__btn">Buy Now</a>
+            </div>
+          </div>
+
+          <div class="col-1-of-3">
+            <div class="card">
+              <h4 class="card__title">Sports Watch</h4>
+              <p class="card__text">Simple pink version</p>
+              <p class="card__price">&dollar;190</p>
+              <img class="card__img" src="./assets/gallery-3.png" alt="Green Watch">
+              <a href="#" class="card__btn">Buy Now</a>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
 
     <!-- Testimonials -->
     <section class="testimonials"></section>
 
     <!-- Pricing -->
     <section class="pricing"></section>
-
-    <!-- Footer -->
-    <footer class="footer"></footer>
   </main>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
-  <script src="./index.js"></script>
-  <script>
-    var slider = tns({
-      container: '#slider',
-      items: 1,
-      slideBy: 'page',
-      autoplay: true,
-      controls: false,
-      nav: false,
-      speed: 800,
-      autoplayHoverPause: true,
-      autoplayButtonOutput: false,
-      arrowKeys: true
-    });
-  </script>
+  <!-- Footer -->
+  <footer class="footer"></footer>
 
+  <script src="./index.js"></script>
 </body>
 
 </html>

@@ -10,6 +10,16 @@ body {
 		letter-spacing: 5px;
 		line-height: 1.2;
 	}
+	&__secondary {
+		font-size: 5rem;
+		font-weight: 400;
+		letter-spacing: 3px;
+		color: $color-dark-1;
+		line-height: 1.2;
+		text-transform: capitalize;
 
-	// &__secondary {}
+		span {
+			display: block;
+		}
+	}
 }

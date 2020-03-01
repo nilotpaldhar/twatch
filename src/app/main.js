@@ -1,3 +1,6 @@
+window.$ = require('jquery');
+import slider from './slider';
+
 export function run() {
-	console.log('App started');
+	slider();
 }
