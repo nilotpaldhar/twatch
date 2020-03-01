@@ -1,0 +1,15 @@
+body {
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+.heading {
+	&__primary {
+		color: $color-white;
+		font-size: 6rem;
+		font-weight: 500;
+		letter-spacing: 5px;
+		line-height: 1.2;
+	}
+
+	// &__secondary {}
+}

@@ -1,0 +1,33 @@
+.product {
+	grid-column: center-start / center-end;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: center;
+	justify-content: start;
+
+	&__content {
+		.lead {
+			margin: 4rem 0;
+		}
+	}
+
+	&__price {
+		font-size: 3.6rem;
+		font-weight: 500;
+		color: $color-white;
+		margin-top: 4rem;
+
+		& > span {
+			font-size: 6rem;
+			font-weight: 700;
+		}
+	}
+
+	&__img-box {
+		justify-self: end;
+	}
+
+	&__img {
+		width: 130%;
+	}
+}
