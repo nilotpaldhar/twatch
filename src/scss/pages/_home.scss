@@ -2,12 +2,21 @@
 Feature Styling
 --------------------------------- */
 .features {
+	margin: 8rem 0;
 }
 
 /* ---------------------------------
 Services Styling
 --------------------------------- */
-.gallery {
+.products {
+	padding: 20rem;
+	background-image: $background-color;
+	transform: skewY(7deg);
+	margin-top: 16rem;
+
+	& > * {
+		transform: skewY(-7deg);
+	}
 }
 
 /* ---------------------------------
