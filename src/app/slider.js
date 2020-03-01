@@ -1,10 +1,18 @@
 import slick from 'slick-carousel';
 
 function slider() {
-	$('#slider').slick({
+	$('#product-slider').slick({
 		autoplay: true,
-		speed: 500,
+		speed: 800,
 		arrows: false
+	});
+
+	$('#testimonial-slider').slick({
+		autoplay: true,
+		speed: 1000,
+		arrows: false,
+		slidesToShow: 3,
+		dots: true
 	});
 }
 
