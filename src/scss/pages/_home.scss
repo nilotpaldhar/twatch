@@ -37,4 +37,18 @@ Testimonials Styling
 Pricing Styling
 --------------------------------- */
 .pricing {
+	position: relative;
+	margin: 15rem 0;
+	padding: 10rem 0;
+	background-image: $background-color;
+	transform: skewY(7deg);
+	& > * {
+		transform: skewY(-7deg);
+		position: relative;
+		z-index: 2;
+	}
+
+	&__container {
+		margin-bottom: -20rem;
+	}
 }
