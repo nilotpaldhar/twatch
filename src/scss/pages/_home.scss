@@ -11,11 +11,11 @@ Services Styling
 .products {
 	padding: 20rem;
 	background-image: $background-color;
-	transform: skewY(7deg);
+	transform: skewY(5deg);
 	margin-top: 16rem;
 
 	& > * {
-		transform: skewY(-7deg);
+		transform: skewY(-5deg);
 	}
 }
 
@@ -41,9 +41,9 @@ Pricing Styling
 	margin: 15rem 0;
 	padding: 10rem 0;
 	background-image: $background-color;
-	transform: skewY(7deg);
+	transform: skewY(5deg);
 	& > * {
-		transform: skewY(-7deg);
+		transform: skewY(-5deg);
 		position: relative;
 		z-index: 2;
 	}
