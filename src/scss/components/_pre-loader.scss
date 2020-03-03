@@ -1,0 +1,34 @@
+.loader {
+	background-color: #f9f9f9;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100%;
+	z-index: 10000;
+
+	.circle {
+		width: 30px;
+		height: 30px;
+		position: absolute;
+		background-image: linear-gradient(to bottom, #4a148c, #2196f3);
+		border-radius: 50%;
+		margin: -15px;
+		animation: mesh 3s ease-in-out infinite -1.5s;
+	}
+
+	& > div .circle:last-child {
+		animation-delay: 0s;
+	}
+
+	& > div {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+	}
+
+	& > div:last-child {
+		transform: rotate(90deg);
+	}
+}
