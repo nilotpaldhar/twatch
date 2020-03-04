@@ -4,6 +4,7 @@ import preLoader from './pre-loader';
 import slider from './slider';
 import navScroll from './navScroll';
 import scrollSpy from './scrollSpy';
+import mobileNav from './mobileNav';
 
 export function run() {
 	preLoader();
@@ -14,4 +15,5 @@ export function run() {
 		speed: 1000
 	});
 	scrollSpy();
+	mobileNav();
 }
