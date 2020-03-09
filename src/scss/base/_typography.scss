@@ -9,6 +9,14 @@ body {
 		font-weight: 500;
 		letter-spacing: 5px;
 		line-height: 1.2;
+
+		@include respond(tab-land) {
+			font-size: 5.5rem;
+		}
+
+		@include respond(phone) {
+			font-size: 4.375rem;
+		}
 	}
 	&__secondary {
 		font-size: 5rem;

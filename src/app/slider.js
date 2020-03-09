@@ -12,7 +12,24 @@ function slider() {
 		speed: 1000,
 		arrows: false,
 		slidesToShow: 3,
-		dots: true
+		dots: true,
+		// Responsive Breakpoint
+		responsive: [
+			{
+				breakpoint: 1200,
+				settings: {
+					slidesToShow: 2,
+					infinite: true
+				}
+			},
+			{
+				breakpoint: 900,
+				settings: {
+					slidesToShow: 1,
+					infinite: true
+				}
+			}
+		]
 	});
 }
 

@@ -6,13 +6,39 @@
 	justify-content: center;
 	align-items: center;
 
+	@include respond(tab-port) {
+		clip-path: polygon(0 0, 100% 0, 100% 100%, 0 92%);
+	}
+
+	.row {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		@include respond(tab-port) {
+			flex-direction: column;
+		}
+	}
+
 	.lead {
 		margin: 3.5rem 0;
+
+		@include respond(tab-land) {
+			margin: 3rem 0;
+		}
 	}
 
 	&__img {
 		display: block;
 		width: 90%;
 		margin-left: auto;
+
+		@include respond(tab-land) {
+			width: 80%;
+		}
+
+		@include respond(tab-port) {
+			display: none;
+		}
 	}
 }

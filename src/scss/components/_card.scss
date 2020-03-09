@@ -11,6 +11,16 @@
 	color: $color-white;
 	z-index: 1;
 
+	@include respond(tab-port) {
+		width: 70%;
+		margin: 0 auto;
+		height: 60rem;
+	}
+
+	@include respond(phone) {
+		width: 100%;
+	}
+
 	&::before {
 		content: '';
 		display: block;
@@ -49,6 +59,14 @@
 		width: 50%;
 		margin: 2rem 0 3rem 0;
 		transform: rotate(10deg);
+
+		@include respond(tab-port) {
+			width: 35%;
+		}
+
+		@include respond(phone) {
+			width: 40%;
+		}
 	}
 
 	&__btn,

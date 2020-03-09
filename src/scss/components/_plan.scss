@@ -9,6 +9,15 @@
 	justify-content: center;
 	text-align: center;
 
+	@include respond(tab-port) {
+		width: 70%;
+		margin: 0 auto;
+	}
+
+	@include respond(phone) {
+		width: 100%;
+	}
+
 	&__user {
 		display: block;
 		font-size: 2rem;

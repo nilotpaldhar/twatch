@@ -9,13 +9,32 @@ Feature Styling
 Services Styling
 --------------------------------- */
 .products {
-	padding: 20rem;
+	padding: 20rem 0;
 	background-image: $background-color;
 	transform: skewY(5deg);
 	margin-top: 16rem;
 
+	@include respond(phone) {
+		transform: skewY(9deg);
+		padding: 10rem 0;
+	}
+
 	& > * {
 		transform: skewY(-5deg);
+
+		@include respond(phone) {
+			transform: skewY(-9deg);
+		}
+	}
+
+	.row {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		@include respond(tab-port) {
+			flex-direction: column;
+		}
 	}
 }
 
@@ -42,10 +61,19 @@ Pricing Styling
 	padding: 10rem 0;
 	background-image: $background-color;
 	transform: skewY(5deg);
+
+	@include respond(phone) {
+		transform: skewY(9deg);
+	}
+
 	& > * {
 		transform: skewY(-5deg);
 		position: relative;
 		z-index: 2;
+
+		@include respond(phone) {
+			transform: skewY(-9deg);
+		}
 	}
 
 	&__container {

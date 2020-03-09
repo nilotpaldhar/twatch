@@ -8,6 +8,14 @@
 	padding: 0 2rem;
 	cursor: grab;
 
+	@include respond(tab-port) {
+		padding: 0 10rem;
+	}
+
+	@include respond(phone) {
+		padding: 0;
+	}
+
 	&__text {
 		font-size: 1.8rem;
 		font-weight: 300;
